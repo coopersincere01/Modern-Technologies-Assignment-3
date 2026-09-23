@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>My Notes</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar">
+        <h1>My Notes</h1>
+
+        <div class="topbar-actions">
+          <label for="search-notes">Search</label>
+          <input
+            id="search-notes"
+            type="search"
+            placeholder="Search notes"
+            aria-label="Search notes"
+          />
+
+          <button type="button">New Note</button>
+        </div>
+      </header>
+
+      <main class="layout">
+        <aside class="sidebar" aria-label="Notes list">
+          <h2>Notes</h2>
+
+          <ul class="note-list">
+            <li>
+              <button type="button">Sample Note</button>
+            </li>
+            <li>
+              <button type="button">Shopping List</button>
+            </li>
+            <li>
+              <button type="button">Ideas for Project</button>
+            </li>
+          </ul>
+        </aside>
+
+        <section class="editor" aria-label="Note editor">
+          <div class="editor-actions">
+            <button type="button">Pin</button>
+            <button type="button">Delete</button>
+          </div>
+
+          <div class="field">
+            <label for="note-title">Title</label>
+            <input
+              id="note-title"
+              type="text"
+              placeholder="Untitled note"
+              aria-label="Note title"
+            />
+          </div>
+
+          <div class="field">
+            <label for="note-body">Note</label>
+            <textarea
+              id="note-body"
+              rows="12"
+              placeholder="Write your note here..."
+              aria-label="Note body"
+            ></textarea>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
